@@ -11,13 +11,14 @@ import {
   Text,
   View
 } from 'react-native';
+
 import WelcomeScreen from './WelcomeScreen'
 
 export default class reactChatClient extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <WelcomeScreen/>
+        <WelcomeScreen/>  
       </View>
     );
   }
@@ -28,7 +29,12 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'stretch',
     justifyContent: 'flex-start',
+    justifyContent: 'center',
     backgroundColor: '#F5FCFF',
+  },
+  convoHeader: {
+    height: 45,
+    backgroundColor: '#d1fffc'
   }
 });
 
